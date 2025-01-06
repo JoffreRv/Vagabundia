@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Vagabundia</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="main-header">
+    <h1>Vagabundia</h1>
+    <nav>
+        <ul>
+            <li><a href="Vagabundia.html">Inicio</a></li>
+            <li><a href="Servicios.html">Servicios</a></li>
+            <li><a href="Destinos.html">Destinos</a></li>
+            <li><a href="Servicios_especiales.html">Servicios Especiales</a></li>
+            <li><a href="Contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="hero-contacto">
+    <h2>Contáctenos</h2>
+    <p>
+        Puede contactarse con nosotros por correo electrónico mediante el siguiente formulario.
+        Responderemos tan pronto como sea posible.
+        <br>
+        Tenga en cuenta que esta respuesta puede demorarse por fines de semana o días festivos.
+    </p>
+</section>
+
+<section class="formulario-mapa">
+    <div class="formulario">
+        <form>
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Nombre">
+            
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" placeholder="E-mail">
+            
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" placeholder="Escriba su mensaje aquí"></textarea>
+            
+            <button type="submit" class="btn-enviar">Enviar Mensaje</button>
+        </form>
+    </div>
+    <div id="mapa" style="width: 100%; height: 300px;"></div>
+    
+</section>
+
+<footer class="main-footer">
+    <p>Avenida del Ejército y Avenida Bolivariana</p>
+    <div class="social-icons">
+        <a href="#" class="icon-facebook">Facebook</a>
+        <a href="#" class="icon-instagram">Instagram</a>
+        <a href="#" class="icon-twitter">Twitter</a>
+        <a href="#" class="icon-youtube">YouTube</a>
+    </div>
+</footer>
+<!-- Scripts -->
+<script src="https://maps.googleapis.com/maps/api/js?key=TU_API_KEY"></script>
+<script>
+    // Inicializar el mapa
+    function initMap() {
+        const ubicacion = { lat: -1.831239, lng: -78.183406 }; // Coordenadas de Ecuador
+        const map = new google.maps.Map(document.getElementById("mapa"), {
+            zoom: 8, // Nivel de zoom
+            center: ubicacion, // Centro del mapa
+        });
+        new google.maps.Marker({
+            position: ubicacion,
+            map: map,
+            title: "Vagabundia",
+        });
+    }
+
+    // Llamar a la función initMap al cargar la página
+    window.onload = initMap;
+</script>
+
+</body>
+</html>

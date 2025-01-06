@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vagabundia</title>
+     <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <!-- jQuery -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>    
+    <!-- Font Awesome CDN -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+        <link rel="stylesheet" href="style/style.css">
+    <!-- Favicon -->
+        <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet"> 
+    
+</head>
+<body>
+
+<!-- barra de inicio -->
+<header class="component">
+    <h1 class="header">Vagabundia</h1>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">    
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a href="index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="Servicios.html">Servicios</a>
+                </li>
+                <li class="nav-item">
+                    <a href="Destinos.html">Destinos</a>
+                </li>
+                <li class="nav-item">
+                    <a href="Servicios_especiales.html">Servicios Especiales</a>
+                </li>
+                <li class="nav-item">
+                    <a href="Contacto.html">Contacto</a>
+                </li>
+            </ul>
+        </div>    
+    </nav>
+</header>
+
+<!-- seccion hero -->
+<div class="container-fluid p-0">
+    <div id="header-carousel" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="d-block w-100" src="img/carousel-1.jpg" alt="Imagen">
+                <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                    <div class="p-3" style="max-width: 900px;">
+                        <h4 class="text-white text-uppercase mb-md-3">Tours & Viajes</h4>
+                        <h1 class="display-3 text-white mb-md-4">Descubramos lugares exóticos Juntos</h1>
+                        <a href="Contacto.html" class="btn btn-primary py-md-3 px-md-5 mt-2">Reservar Ahora</a>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="img/carousel-2.jpg" alt="Imagen">
+                <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                    <div class="p-3" style="max-width: 900px;">
+                        <h4 class="text-white text-uppercase mb-md-3">Tours & Viajes</h4>
+                        <h1 class="display-3 text-white mb-md-4">Explora MANABI Con Nosotros</h1>
+                        <a href="Contacto.html" class="btn btn-primary py-md-3 px-md-5 mt-2">Reservar Ahora</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#header-carousel" role="button" data-slide="prev">
+            <div class="btn btn-dark" style="width: 45px; height: 45px;">
+                <span class="carousel-control-prev-icon mb-n2"></span>
+            </div>
+        </a>
+        <a class="carousel-control-next" href="#header-carousel" role="button" data-slide="next">
+            <div class="btn btn-dark" style="width: 45px; height: 45px;">
+                <span class="carousel-control-next-icon mb-n2"></span>
+            </div>
+        </a>
+    </div>
+</div>
+
+<!-- seccion servicios -->
+<section class="servicios">
+    <h3>Servicios</h3>
+    <h4>Tours y Servicios de Viaje</h4>
+    <section class="carousel">
+        <div class="carousel-container">
+            <div class="carousel-item active">
+                <img src="img/ser-1.gif" alt="Tour Temático 1">
+                <h4>Gastronómicos</h4>
+            </div>
+            <div class="carousel-item">
+                <img src="img/ser-2.gif" alt="Tour Temático 2">
+                <h4>Nocturnos</h4>
+            </div>
+            <div class="carousel-item">
+                <img src="img/ser-3.gif" alt="Tour Temático 3">
+                <h4>Transporte y Logística</h4>
+            </div>
+            <div class="carousel-item">
+                <img src="img/serv-4.gif" alt="Tour Temático 4">
+                <h4>Helicópteros VIP</h4>
+            </div>
+        </div>
+        <button class="prev">⟨</button>
+        <button class="next">⟩</button>
+    </section>
+    </div>
+</section>
+
+<!-- seccion destinos -->
+<section class="destinos">
+    <h3>Destinos</h3>
+    <h4>Explora Los Mejores Destinos</h4>
+    <div class="destinos-grid">
+        <div class="destino">
+            <img src="img/destination-1.jpg" alt="Balneareos">
+            <h4>Balneareos</h4>
+            <p>Un sitio arqueológico muy interesante, con senderos protegidos y vigilancia 24 horas.</p>
+        </div>
+        <div class="destino">
+            <img src="img/destination-2.jpg" alt="Miradores">
+            <h4>Miradores</h4>
+            <p>Un ambiente natural único para disfrutar de hermosos jardines y especies botánicas.</p>
+        </div>
+        <div class="destino">
+            <img src="img/destination-3.jpg" alt="Playas">
+            <h4>Playas</h4>
+            <p>Un lugar perfecto para relajarse y disfrutar de un ambiente tranquilo.</p>
+        </div>
+    </div>
+</section>
+
+<!-- seccion servicios especiales-->
+<section class="especial">
+    <h3>Servicios Especiales</h3>
+    <h4>Paquetes de Tours Perfectos</h4>
+    <div class="grid-especial">
+        <div class="row">
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="destination-item position-relative overflow-hidden mb-2">
+                    <img class="img-fluid" src="img/bus-1.jpg" alt="">
+                    <a class="destination-overlay text-white text-decoration-none" href="">
+                        <h5 class="text-white">SEGURIDAD</h5>
+                        <span>Vagabundia</span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="destination-item position-relative overflow-hidden mb-2">
+                    <img class="img-fluid" src="img/bus-2.jpg" alt="">
+                    <a class="destination-overlay text-white text-decoration-none" href="">
+                        <h5 class="text-white">CONFORT</h5>
+                        <span>Vagabundia</span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="destination-item position-relative overflow-hidden mb-2">
+                    <img class="img-fluid" src="img/bus-3.jpg" alt="">
+                    <a class="destination-overlay text-white text-decoration-none" href="">
+                        <h5 class="text-white">ESTILO</h5>
+                        <span>Vagabundia</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="carrusel">
+            <h3>Flota Vehicular</h3>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="destination-item position-relative overflow-hidden mb-2">
+                        <img class="img-fluid" src="img/vehi-1.jpeg" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="destination-item position-relative overflow-hidden mb-2">
+                        <img class="img-fluid" src="img/veh-2.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="destination-item position-relative overflow-hidden mb-2">
+                        <img class="img-fluid" src="img/veh-3.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="hoteles">
+            <h3>Hoteles</h3>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="destination-item position-relative overflow-hidden mb-2">
+                        <img class="img-fluid" src="img/hotel-1.jpg" alt="">
+                        <a class="destination-overlay text-white text-decoration-none" href="">
+                            <h5 class="text-white">Ceibo Dorado</h5>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="destination-item position-relative overflow-hidden mb-2">
+                        <img class="img-fluid" src="img/hotel-2.jpg" alt="">
+                        <a class="destination-overlay text-white text-decoration-none" href="">
+                            <h5 class="text-white">Platanal</h5>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="destination-item position-relative overflow-hidden mb-2">
+                        <img class="img-fluid" src="img/hotel-3.jpg" alt="">
+                        <a class="destination-overlay text-white text-decoration-none" href="">
+                            <h5 class="text-white">Madrigal</h5>
+                        </a>
+                    </div>
+                </div>
+            </div>      
+        </div>
+    </div>
+</section>
+
+<!-- seccion contacto-->
+<section class="contacto">
+    <h3>Contáctanos para mayor información</h3>
+    <form>
+        <input type="text" placeholder="Nombre" required>
+        <input type="email" placeholder="Email" required>
+        <input type="tel" placeholder="Teléfono" required>
+        <button type="submit">Agendar cita</button>
+    </form>
+</section>
+
+
+<footer>
+    <div class="container-fluid bg-light pt-3 d-none d-lg-block">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 text-center text-lg-left mb-2 mb-lg-0">
+                    <div class="d-inline-flex align-items-center">
+                        <p><i class="fa fa-envelope mr-2"></i>vagabundiatuparaiso@.gmail.com</p>
+                        <p class="text-body px-3">|</p>
+                        <p><i class="fa fa-phone-alt mr-2"></i>+59394545357</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 text-center text-lg-right">
+                    <div class="d-inline-flex align-items-center">
+                        <a class="text-primary px-3" href="https://www.facebook.com/?locale=es_LA">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a class="text-primary px-3" href="https://x.com/?lang=es">
+                            <i class="fas fa-times"></i>
+                        </a>
+                        <a class="text-primary px-3" href="https://ec.linkedin.com/">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a class="text-primary px-3" href="https://www.instagram.com/">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a class="text-primary pl-3" href="https://www.youtube.com/">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="script/script.js"></script>
+</body>
+</html>
