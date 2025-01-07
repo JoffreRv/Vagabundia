@@ -1,25 +1,69 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto - Vagabundia</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Vagabundia - Contacto</title>
+         <!-- Bootstrap CSS -->
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+            <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+        <!-- jQuery -->
+            <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>    
+        <!-- Font Awesome CDN -->
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+            <link rel="stylesheet" href="style/style.css">
+        <!-- Favicon -->
+            <link href="img/favicon.ico" rel="icon">
+    
+        <!-- Google Web Fonts -->
+            <link rel="preconnect" href="https://fonts.gstatic.com">
+            <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet"> 
+        
+    </head>
 <body>
 
-<header class="main-header">
-    <h1>Vagabundia</h1>
-    <nav>
-        <ul>
-            <li><a href="Vagabundia.html">Inicio</a></li>
-            <li><a href="Servicios.html">Servicios</a></li>
-            <li><a href="Destinos.html">Destinos</a></li>
-            <li><a href="Servicios_especiales.html">Servicios Especiales</a></li>
-            <li><a href="Contacto.html">Contacto</a></li>
-        </ul>
+<!-- barra de inicio -->
+<header class="component">
+    <h1 class="header">Vagabundia</h1>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">    
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a href="index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="Servicios.html">Servicios</a>
+                </li>
+                <li class="nav-item">
+                    <a href="Destinos.html">Destinos</a>
+                </li>
+                <li class="nav-item">
+                    <a href="Servicios_especiales.html">Servicios Especiales</a>
+                </li>
+                <li class="nav-item">
+                    <a href="Contacto.html">Contacto</a>
+                </li>
+            </ul>
+        </div>    
     </nav>
 </header>
+
+<!-- seccion hero -->
+<div class="image-banner">
+    <img class="banner-image" src="img/carousel-1.jpg" alt="Imagen principal">
+    <div class="banner-caption">
+        <div class="text-container">
+            <h1 class="display-3 text-white mb-4">¿Tienes preguntas? ¡Contáctanos y comencemos tu próxima aventura!</h1>
+            <a href="Contacto.html" class="btn btn-primary py-md-3 px-md-5 mt-2">Reservar Ahora</a> 
+        </div>
+    </div>
+</div>
 
 <section class="hero-contacto">
     <h2>Contáctenos</h2>
@@ -31,54 +75,80 @@
     </p>
 </section>
 
-<section class="formulario-mapa">
-    <div class="formulario">
-        <form>
-            <label for="nombre">Nombre</label>
-            <input type="text" id="nombre" name="nombre" placeholder="Nombre">
-            
-            <label for="email">E-mail</label>
-            <input type="email" id="email" name="email" placeholder="E-mail">
-            
-            <label for="mensaje">Mensaje:</label>
-            <textarea id="mensaje" name="mensaje" placeholder="Escriba su mensaje aquí"></textarea>
-            
-            <button type="submit" class="btn-enviar">Enviar Mensaje</button>
-        </form>
+<section class="formulario">
+    <div class="container">
+        <div class="image-container">
+            <img src="img/mapa.jpg" alt="Descripción de la imagen" class="left-image">
+        </div>
+        <div class="formulario">
+            <form>
+                <h3>Formulario de Contacto</h3>
+                
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" placeholder="Nombre y Apellido" required>
+                
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" placeholder="example@.com" required>
+                
+                <label for="phone">Teléfono (opcional):</label>
+                <input type="tel" id="phone" name="phone" placeholder="Ejemplo: +593 994545357">
+                
+                <label for="subject">Asunto:</label>
+                <select id="subject" name="subject" required>
+                    <option value="">Selecciona un asunto</option>
+                    <option value="consulta">Consulta</option>
+                    <option value="soporte">Soporte Técnico</option>
+                    <option value="sugerencia">Sugerencia</option>
+                    <option value="otro">Otro</option>
+                </select>
+                
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" rows="4" placeholder="Ingresa la solicitud requerida" required></textarea>
+                
+                <label for="confirm">Escribe "sí" para confirmar que no eres un robot:</label>
+                <input type="text" id="confirm" name="confirm" placeholder="sí" required>
+                
+                <button type="submit" class="btn-enviar">Enviar</button>
+            </form>
+        </div>
     </div>
-    <div id="mapa" style="width: 100%; height: 300px;"></div>
-    
 </section>
 
-<footer class="main-footer">
-    <p>Avenida del Ejército y Avenida Bolivariana</p>
-    <div class="social-icons">
-        <a href="#" class="icon-facebook">Facebook</a>
-        <a href="#" class="icon-instagram">Instagram</a>
-        <a href="#" class="icon-twitter">Twitter</a>
-        <a href="#" class="icon-youtube">YouTube</a>
+<footer>
+    <div class="container-fluid bg-light pt-3 d-none d-lg-block">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 text-center text-lg-left mb-2 mb-lg-0">
+                    <div class="d-inline-flex align-items-center">
+                        <p><i class="fa fa-envelope mr-2"></i>vagabundiatuparaiso@.gmail.com</p>
+                        <p class="text-body px-3">|</p>
+                        <p><i class="fa fa-phone-alt mr-2"></i>+59394545357</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 text-center text-lg-right">
+                    <div class="d-inline-flex align-items-center">
+                        <a class="text-primary px-3" href="https://www.facebook.com/?locale=es_LA">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a class="text-primary px-3" href="https://x.com/?lang=es">
+                            <i class="fas fa-times"></i>
+                        </a>
+                        <a class="text-primary px-3" href="https://ec.linkedin.com/">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a class="text-primary px-3" href="https://www.instagram.com/">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a class="text-primary pl-3" href="https://www.youtube.com/">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </footer>
-<!-- Scripts -->
-<script src="https://maps.googleapis.com/maps/api/js?key=TU_API_KEY"></script>
-<script>
-    // Inicializar el mapa
-    function initMap() {
-        const ubicacion = { lat: -1.831239, lng: -78.183406 }; // Coordenadas de Ecuador
-        const map = new google.maps.Map(document.getElementById("mapa"), {
-            zoom: 8, // Nivel de zoom
-            center: ubicacion, // Centro del mapa
-        });
-        new google.maps.Marker({
-            position: ubicacion,
-            map: map,
-            title: "Vagabundia",
-        });
-    }
 
-    // Llamar a la función initMap al cargar la página
-    window.onload = initMap;
-</script>
-
+<script src="script/script.js"></script>
 </body>
 </html>

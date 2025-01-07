@@ -1,77 +1,139 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vagabundia - Destinos</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Vagabundia - Destinos</title>
+         <!-- Bootstrap CSS -->
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+            <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+        <!-- jQuery -->
+            <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>    
+        <!-- Font Awesome CDN -->
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+            <link rel="stylesheet" href="style/style.css">
+        <!-- Favicon -->
+            <link href="img/favicon.ico" rel="icon">
+    
+        <!-- Google Web Fonts -->
+            <link rel="preconnect" href="https://fonts.gstatic.com">
+            <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet"> 
+        
+    </head>
 <body>
-
-<header class="main-header">
-    <h1>Vagabundia</h1>
-    <nav>
-        <ul>
-            <li><a href="Vagabundia.html">Inicio</a></li>
-            <li><a href="Servicios.html">Servicios</a></li>
-            <li><a href="Destinos.html">Destinos</a></li>
-            <li><a href="Servicios_especiales.html">Servicios Especiales</a></li>
-            <li><a href="Contacto.html">Contacto</a></li>
-        </ul>
+<!-- barra de inicio -->
+<header class="component">
+    <h1 class="header">Vagabundia</h1>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">    
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a href="index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="Servicios.html">Servicios</a>
+                </li>
+                <li class="nav-item">
+                    <a href="Destinos.html">Destinos</a>
+                </li>
+                <li class="nav-item">
+                    <a href="Servicios_especiales.html">Servicios Especiales</a>
+                </li>
+                <li class="nav-item">
+                    <a href="Contacto.html">Contacto</a>
+                </li>
+            </ul>
+        </div>    
     </nav>
 </header>
 
-<section class="hero">
-    <div class="portada_destino">
-    <img src="E:\TICS\5SEMESTRE\Desarrollo de Sistemas Informáticos\Practicas\Actividad_5\Pagina web\Img destinos.jpg" alt="portada_destino">
-    <h2>Vive experiencias únicas en<br><span>cada rincón de nuestros destinos</span></h2>
+<!-- seccion hero -->
+<div class="image-banner">
+    <img class="banner-image" src="img/carousel-1.jpg" alt="Imagen principal">
+    <div class="banner-caption">
+        <div class="text-container">
+            <h4 class="text-white text-uppercase mb-3">Tours & Viajes</h4>
+            <h1 class="display-3 text-white mb-4">Vive experiencias únicas en cada rincón de nuestros destinos</h1>
+            <a href="Contacto.html" class="btn btn-primary py-md-3 px-md-5 mt-2">Reservar Ahora</a> 
+        </div>
+    </div>
+</div>
+
+<!-- seccion destinos -->
+<section class="destinos">
+    <h3>Destinos</h3>
+    <h4>Explora Los Mejores Destinos</h4>
+    <div class="destinos-grid">
+        <div class="destino">
+            <img src="img/destination-1.jpg" alt="Balneareos">
+            <h4>Balneareos</h4>
+            <p>Un sitio arqueológico muy interesante, con senderos protegidos y vigilancia 24 horas.</p>
+        </div>
+        <div class="destino">
+            <img src="img/destination-2.jpg" alt="Miradores">
+            <h4>Miradores</h4>
+            <p>Un ambiente natural único para disfrutar de hermosos jardines y especies botánicas.</p>
+        </div>
+        <div class="destino">
+            <img src="img/destination-3.jpg" alt="Playas">
+            <h4>Playas</h4>
+            <p>Un lugar perfecto para relajarse y disfrutar de un ambiente tranquilo.</p>
+        </div>
     </div>
 </section>
-
-<section class="destinos-grid">
-    <div class="destino">
-        <img src="jardin-botanico.jpg" alt="Jardín Botánico">
-        <h4>Jardín Botánico</h4>
-    </div>
-    <div class="destino">
-        <img src="parque-central.jpg" alt="Parque Central Vicente Amador">
-        <h4>Parque Central Vicente Amador</h4>
-    </div>
-    <div class="destino">
-        <img src="mirador-tigre.jpg" alt="Mirador el Tigre">
-        <h4>Mirador el Tigre</h4>
-    </div>
-    <div class="destino">
-        <img src="cerro-hojas.jpg" alt="Parque Arqueológico Cerro de Hojas">
-        <h4>Parque Arqueológico Cerro de Hojas</h4>
-    </div>
-    <div class="destino">
-        <img src="balneario-chirijos.jpg" alt="Balneario Chirijos">
-        <h4>Balneario Chirijos</h4>
-    </div>
-    <div class="destino">
-        <img src="parque-forestal.jpg" alt="Parque Forestal">
-        <h4>Parque Forestal</h4>
-    </div>
-    <div class="destino">
-        <img src="parque-vegas.jpg" alt="Parque Las Vegas">
-        <h4>Parque Las Vegas</h4>
-    </div>
-    <div class="destino">
-        <img src="catedral.jpg" alt="Catedral Metropolitana">
-        <h4>Catedral Metropolitana</h4>
-    </div>
+<!-- seccion contacto-->
+<section class="contacto">
+    <h3>Contáctanos para mayor información</h3>
+    <form>
+        <input type="text" placeholder="Nombre" required>
+        <input type="email" placeholder="Email" required>
+        <input type="tel" placeholder="Teléfono" required>
+        <button type="submit">Agendar cita</button>
+    </form>
 </section>
 
-<footer class="main-footer">
-    <p>Avenida del Ejército y Avenida Bolivariana</p>
-    <div class="social-icons">
-        <a href="#" class="icon-facebook">Facebook</a>
-        <a href="#" class="icon-instagram">Instagram</a>
-        <a href="#" class="icon-twitter">Twitter</a>
-        <a href="#" class="icon-youtube">YouTube</a>
+<footer>
+    <div class="container-fluid bg-light pt-3 d-none d-lg-block">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 text-center text-lg-left mb-2 mb-lg-0">
+                    <div class="d-inline-flex align-items-center">
+                        <p><i class="fa fa-envelope mr-2"></i>vagabundiatuparaiso@.gmail.com</p>
+                        <p class="text-body px-3">|</p>
+                        <p><i class="fa fa-phone-alt mr-2"></i>+59394545357</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 text-center text-lg-right">
+                    <div class="d-inline-flex align-items-center">
+                        <a class="text-primary px-3" href="https://www.facebook.com/?locale=es_LA">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a class="text-primary px-3" href="https://x.com/?lang=es">
+                            <i class="fas fa-times"></i>
+                        </a>
+                        <a class="text-primary px-3" href="https://ec.linkedin.com/">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a class="text-primary px-3" href="https://www.instagram.com/">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a class="text-primary pl-3" href="https://www.youtube.com/">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </footer>
+
+<script src="script/script.js"></script>
 
 </body>
 </html>
